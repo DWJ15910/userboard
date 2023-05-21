@@ -8,6 +8,7 @@
 	// 2) request/reponse JSP내창 객체
 	
 	//현재페이지 선언
+	//페이징 설정
 	int currentPage = 1;
 	//localName을 전체를 기본 설정
 	String localName ="전체";
