@@ -4,7 +4,8 @@
 <%
 	//메세지 선언
 	String msg = "";
-	
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
 	//세션 유효성 검사
 	//로그인된 상태로 들어갈려고하면 home.jsp로 이동
 	if(session.getAttribute("loginMemberId") != null) {

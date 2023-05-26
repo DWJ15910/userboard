@@ -2,7 +2,9 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
 <%
-	
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
+
 	//작성자,댓글내용,boardNo(간추리기용) 유효성검사
 	if(request.getParameter("addWriter")==null
 		||request.getParameter("addText")==null

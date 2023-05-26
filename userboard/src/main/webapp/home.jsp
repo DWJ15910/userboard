@@ -6,7 +6,8 @@
 	// 1. 요청분석(컨트롤러 계층)
 	// 1) session 내장개체
 	// 2) request/reponse JSP내창 객체
-	
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
 	//현재페이지 선언
 	//페이징 설정
 	int currentPage = 1;

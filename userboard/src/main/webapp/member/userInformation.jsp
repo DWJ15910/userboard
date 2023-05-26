@@ -3,6 +3,8 @@
 <%@ page import="java.util.*" %>
 <%@ page import="vo.*" %>
 <%
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
 	//로그인 정보 없을때는 홈으로 반환
 	if(session.getAttribute("loginMemberId") == null) {
 		response.sendRedirect(request.getContextPath()+"/home.jsp");

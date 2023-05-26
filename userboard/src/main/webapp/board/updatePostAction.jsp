@@ -3,6 +3,8 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.net.*" %>
 <%
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
 	if(session.getAttribute("loginMemberId") == null) {
 		response.sendRedirect(request.getContextPath()+"/home.jsp");
 		System.out.println("세션로그인값없음");

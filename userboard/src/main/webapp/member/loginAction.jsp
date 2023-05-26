@@ -3,6 +3,8 @@
 <%@ page import="java.net.*" %>
 <%@ page import="vo.*" %>
 <%
+	//한글 깨짐 방지
+	request.setCharacterEncoding("utf8");
 	//맨 위에는 세션 요소검사 부터 해야한다
 	
 	//세션 유효성 검사
